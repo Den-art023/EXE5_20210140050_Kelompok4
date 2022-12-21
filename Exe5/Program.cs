@@ -41,6 +41,19 @@ namespace Exe5
             Kaisar = nodeBaru;
         }
 
+        public void delete()
+        {
+            if (Denune == null)
+            {
+                Console.WriteLine("Kosong!!");
+                return;
+            }
+            Denune = Denune.next;
+
+            if (Denune == null)
+                Kaisar = null;
+        }
+
         
     }
 }
