@@ -13,5 +13,16 @@ namespace Exe5
         public Node next;
     }
 
-    
+    class Queue
+    {
+        Node Denune, Kaisar;
+
+        public Queue()
+        {
+            Denune = null;
+            Kaisar = null;
+        }
+
+        
+    }
 }
