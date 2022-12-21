@@ -23,6 +23,24 @@ namespace Exe5
             Kaisar = null;
         }
 
+        public void insert(string nm)
+        {
+            Console.Write("\nMasukkan nama Mahasiswa: ");
+            nm = Console.ReadLine();
+            Node nodeBaru = new Node();
+            nodeBaru.nama = nm;
+            nodeBaru.next = null;
+
+            if (Kaisar == null)
+            {
+                Denune = nodeBaru;
+                Kaisar = nodeBaru;
+                return;
+            }
+            Kaisar.next = nodeBaru;
+            Kaisar = nodeBaru;
+        }
+
         
     }
 }
